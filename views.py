@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 # Create your views here.
 
 
@@ -8,8 +9,8 @@ def isManitoba(http_host):
    #return True
 
 def isMalijai(http_host):
-   return True if 'malijai.org' in http_host else False
-#   return True
+#   return True if 'malijai.org' in http_host else False
+   return True
 
 
 def accueil(request):

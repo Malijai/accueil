@@ -3,6 +3,7 @@
 <html>
     <head>
         <title>NTP2 Community system Test</title>
+        <link rel="stylesheet" href="{% static 'blog/style_b.css' %}">
     </head>
     <body>
         <div class="page-header">
@@ -28,10 +29,15 @@
         </div>
     <div class="wrap">
         <h2>{% trans "Bienvenue sur le site privé NTP2 Community" %}</h2>
-        <p>{% blocktrans %}
+         <p>{% blocktrans %}
             Vous devez être inscrit pour accéder à ce site.</p>
+            <p>Si vous désirez avoir un accès veuillez en faire la demande par courriel en suivant ce lien :
+            <a href="mailto:malijai.caulet.ippm@ssss.gouv.qc.ca?&subject=Inscription%20pour%20NTP2%20Community">
+                Demande d'inscription au site du projet NTP2 Community</a></p>
         {% endblocktrans %}
         <h3><a href="{% url 'SelectPersonne' %}" class="btn-default" >{% trans "Accès au système d'entrée des données" %}</a></h3>
+        <h3><a href="{% url 'blogindex' %}" class="btn-default">{% trans "Accès au blog" %}</a></h3>
+        <h3><a href="{% url 'dossier' 1 %}" class="btn-default">{% trans "Accès au dépot de fichiers" %}</a></h3>
     </div>
     <div class="footer">
        <a href="https://github.com/Malijai/observatoire/" class="date" ><img src="/static/images/GitHub-Mark-Light-32px.png"></a>
