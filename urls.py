@@ -1,8 +1,7 @@
-from django.conf.urls import url
-from . import views
+from django.urls import path
 from .views import accueil
 
 
 urlpatterns = [
-    url(r'^$', accueil, name='accueil'),
+    path('', accueil, name='accueil'),
 ]
