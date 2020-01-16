@@ -26,16 +26,19 @@
             <h3><a href="{% url 'dossier' 1 %}" class="w3-button w3-large w3-theme-d2">Accès au dépot de fichiers</a></h3>
         </div>
         <div class="w3-container w3-padding w3-theme-l5">
-            <h3><a href="/admin/bottin/ressource/" class="w3-button w3-large w3-theme-action">Répertoire des ressources</a>
-             Pour rentrer les informations et documents sur les resources </h3>
-            <h4><a href="{% url 'listeressources' %}" class="w3-button w3-theme-l4">Liste des ressources</a>Liste des ressources et extraction pdf</h4>
-            <h3><a href="/admin/tsm/tribunal/" class="w3-button w3-large w3-theme-action">
-            Questionnaire TSM (2018)</a> Pour rentrer les informations et documents sur les TSM (Version 2018)</h3>
+
+            <p>Pour rentrer les informations et documents sur les PAJ-SM (Version 2020)</p>
+                <h3><a href="/admin/pajsm/paj/" class="w3-button w3-large w3-theme-action">Questionnaire PAJ-SM (2020)</a></h3>
+
+            <p>Pour voir les anciennes informations et documents sur les TSM (Version 2018)</p>
+                <h3><a href="/admin/tsm/tribunal/" class="w3-button w3-large w3-theme-l4">Questionnaire TSM (2018)</a></h3>
+            <h3><a href="/admin/bottin/ressource/" class="w3-button w3-large w3-theme-l4">Répertoire des ressources</a></h3>
+            <h5><a href="{% url 'listeressources' %}" class="w3-button w3-theme-l4">Liste des ressources</a>Liste des ressources et extraction pdf</h5>
         </div>
         <div class="w3-container w3-padding w3-theme-l3">
             <h3><a href="/admin/scopingreview/article/" class="w3-button w3-large w3-theme-d1">Scoping Review Intercepts</a> Scoping review des Intercepts </h3>
         </div>
-   </div>
+</div>
 
 <footer class="w3-container w3-theme-d3 footerw3">
 <a href="https://github.com/Malijai/observatoire/" class="date" ><img src="/static/images/GitHub-Mark-Light-32px.png"></a>
